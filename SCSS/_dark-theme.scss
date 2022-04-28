@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+/* DARK THEME */
+
+body.dark {
+
+    background: url(/images/bg-desktop-dark.jpg) no-repeat top;
+    background-color: $veryDarkBlue;
+}
+
+.todo__switch__img.dark{
+
+    content: url(/images/icon-sun.svg);
+}
+
+.name-task.dark{
+
+    background-color: $veryDarkDesaturatedBlue;
+    -webkit-box-shadow: 0 0.563rem 2.25rem -0.75rem #000000; 
+    box-shadow: 0 0.563rem 2.25rem -0.75rem #000000; 
+}
+
+.name-task__input.dark{
+
+    background-color: $veryDarkDesaturatedBlue;
+    color: $lightGrayishBlue;
+}
+
+.task-list.dark{
+
+    background-color: $veryDarkDesaturatedBlue;
+    color: $lightGrayishBlue;
+    -webkit-box-shadow: 0 0.563rem 2.25rem -0.75rem #000000; 
+    box-shadow: 0 0.563rem 2.25rem -0.75rem #000000; 
+}
+
+.task-list__todo.dark{
+
+    background-color: $veryDarkDesaturatedBlue;
+}
+
+.name-task__custom-checkbox.dark{
+
+    border: double 0.063rem $veryDarkGrayishBlue;
+
+    &:hover{
+
+        border: double 0.125rem transparent;
+        background-image: linear-gradient($veryDarkDesaturatedBlue, $veryDarkDesaturatedBlue), 
+        $checkbox-color;
+    }
+}
+
+.footer-list.dark{
+
+    border-top: 0.063rem solid $veryDarkGrayishBlue;
+}
+
+.footer-list__category.dark > li:hover, .footer-list__clear.dark:hover{
+
+    color: $lightGrayishBlue;
+}
+
+.footer-list__filter--mobile.dark{
+
+    background: $veryDarkDesaturatedBlue;
+
+}
+
+
+
+
+
+
+
+
+
+
+

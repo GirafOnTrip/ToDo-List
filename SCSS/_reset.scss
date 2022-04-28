@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+*, ::before, ::after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    width: 100%;
+
+    font-family: $font-Josefin;
+    font-size: 1.125rem;
+    font-weight: 300;
+    background-color: $veryLightGray;
+
+    background: url(/images/bg-desktop-light.jpg) no-repeat top;
+    position: relative;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 33.75rem;
+    position: absolute;
+    top: 5.188rem;
+}
+
+
+
