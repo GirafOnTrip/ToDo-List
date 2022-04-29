@@ -54,9 +54,7 @@ createTaskInput.addEventListener('keyup', function(e){
         
             addTodo()
             frameList.push(createTaskInput.value)
-            addToLocalStorage(frameList)
             counter()
-            localStorage()
             createTaskInput.value = "";
         }  
     }
