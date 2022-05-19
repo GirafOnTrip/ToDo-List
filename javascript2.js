@@ -7,13 +7,14 @@ let checkbox        = document.querySelector(".name-task__custom-checkbox")
 let createTaskInput = document.querySelector(".name-task__input") 
 let taskList        = document.querySelector(".task-list") 
 let footerList      = document.querySelector(".footer-list")
-let footerListPuce  = document.querySelector(".footer-list__category")
+let footerFilter    = document.querySelector(".footer-list__filter")
 let footerListClear = document.querySelector(".footer-list__clear")
 let footerMobile    = document.querySelector(".footer-list__filter--mobile")
 
 
 themeSwitch.addEventListener("click", function(){
 
+    footerListClear.classList.toggle('dark');
     footerMobile.classList.toggle('dark');
     background.classList.toggle('dark');
     themeSwitch.classList.toggle('dark');
@@ -22,8 +23,7 @@ themeSwitch.addEventListener("click", function(){
     taskList.classList.toggle('dark');
     checkbox.classList.toggle('dark');
     footerList.classList.toggle('dark');
-    footerListPuce.classList.toggle('dark');
-    footerListClear.classList.toggle('dark');   
+   
 })
 
 // ADD TASK 
@@ -46,7 +46,7 @@ createTaskInput.addEventListener('keyup', function(e){
     
     if(keyName === 'Enter'){
 
-        if(createTaskInput.value.length == 0){
+        if(createTaskInput.value.length == 0 || createTaskInput.value.trim() == ''){
 
             alert("Please enter a task")
 
@@ -175,7 +175,6 @@ function clearCompleted(e) {
 function counter(){
 
     counterItem.textContent=`${frameList.length}`
-
 }
 
 // Drag and drop 

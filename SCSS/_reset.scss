@@ -22,7 +22,8 @@ body{
     font-weight: 300;
     background-color: $veryLightGray;
 
-    background: url(/images/bg-desktop-light.jpg) no-repeat top;
+    background: url(/images/bg-desktop-light.jpg) no-repeat top ;
+    background-size: 100%;
     position: relative;
 }
 

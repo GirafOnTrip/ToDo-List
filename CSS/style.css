@@ -16,6 +16,7 @@ body {
   font-weight: 300;
   background-color: hsl(0deg, 0%, 98%);
   background: url(/images/bg-desktop-light.jpg) no-repeat top;
+  background-size: 100%;
   position: relative;
 }
 
@@ -284,6 +285,7 @@ body {
 /* DARK THEME */
 body.dark {
   background: url(/images/bg-desktop-dark.jpg) no-repeat top;
+  background-size: 100%;
   background-color: hsl(235deg, 21%, 11%);
 }
 
@@ -325,7 +327,7 @@ body.dark {
   border-top: 0.063rem solid hsl(237deg, 14%, 26%);
 }
 
-.footer-list__category.dark > li:hover, .footer-list__clear.dark:hover {
+label.dark:hover, .footer-list__clear.dark:hover {
   color: hsl(234deg, 39%, 85%);
 }
 

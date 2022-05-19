@@ -32,7 +32,7 @@
       <div class="name-task">
         <input class="name-task__checkbox" type="checkbox" name="checkbox" id="check">
         <label class="name-task__custom-checkbox" for="check"></label>
-        <input class="name-task__input" type="text" placeholder="Create a new todo..." >
+        <input class="name-task__input light" type="text" placeholder="Create a new todo..." >
       </div>
       
       <div class="task-list">
@@ -40,27 +40,29 @@
         
         <div class="footer-list">
           
-          <div class="footer-list__item"><!-- Add dynamic number --><span class="footer-list__item-counter">0</span> items left </div>
+          <div class="footer-list__item"><span class="footer-list__item-counter">0</span> items left </div>
           
           <div class="footer-list__filter">
             <div>
               <input type="radio" name="filter" id="all" value="all" checked>
-              <label for="all">All</label>
+              <label class="light" for="all">All</label>
             </div>
             <div>
               <input type="radio" name="filter" id="active" value="active">
-              <label for="active">Active</label>
+              <label class="light" for="active">Active</label>
             </div>
             <div>
               <input type="radio" name="filter" id="complete" value="complete">
-              <label for="complete">Completed</label>
+              <label class="light" for="complete">Completed</label>
             </div>
           </div>
           
-          <a class="footer-list__clear" aria-label="Clear completed">Clear Completed</a>
+          <a class="footer-list__clear">Clear Completed</a>
           
         </div>
       </div>
+
+      <!-- MOBILE FOOTER -->
 
       <div class="footer-list__filter--mobile">
         <div>
