@@ -1,15 +1,14 @@
 // SWITCH THEME DARK/LIGHT
 
-let background      = document.querySelector("body") 
-let themeSwitch     = document.querySelector(".todo__switch__img") 
-let createTask      = document.querySelector(".name-task") 
-let checkbox        = document.querySelector(".name-task__custom-checkbox")
-let createTaskInput = document.querySelector(".name-task__input") 
-let taskList        = document.querySelector(".task-list") 
-let footerList      = document.querySelector(".footer-list")
-let footerFilter    = document.querySelector(".footer-list__filter")
-let footerListClear = document.querySelector(".footer-list__clear")
-let footerMobile    = document.querySelector(".footer-list__filter--mobile")
+const background          = document.querySelector("body") 
+const themeSwitch         = document.querySelector(".todo__switch__img") 
+const createTask          = document.querySelector(".name-task") 
+const checkbox            = document.querySelector(".name-task__custom-checkbox")
+const createTaskInput     = document.querySelector(".name-task__input") 
+const taskList            = document.querySelector(".task-list")
+const footerList          = document.querySelector(".footer-list")
+const footerListClear     = document.querySelector(".footer-list__clear")
+const footerMobile        = document.querySelector(".footer-list__filter--mobile")
 
 
 themeSwitch.addEventListener("click", function(){
@@ -22,13 +21,13 @@ themeSwitch.addEventListener("click", function(){
     createTaskInput.classList.toggle('dark');
     taskList.classList.toggle('dark');
     checkbox.classList.toggle('dark');
-    footerList.classList.toggle('dark');
-   
+    footerList.classList.toggle('dark');   
 })
 
 // ADD TASK 
 
 // SELECTORS
+
 
 const todoInput         = document.querySelector(".name-task__input");
 const toDoList          = document.querySelector(".task-list__main");
@@ -37,6 +36,7 @@ const filterOptionMobile= document.querySelector(".footer-list__filter--mobile")
 const clear             = document.querySelector(".footer-list__clear");
 const counterItem       = document.querySelector(".footer-list__item-counter")
 const frameList         = [];
+
 
 // LISTENERS
 
@@ -72,6 +72,7 @@ clear.addEventListener("click", clearCompleted);
 
 function addTodo(){
 
+
     const todo = document.createElement("div");
     todo.classList.add("task-list__todo");
     toDoList.appendChild(todo);
@@ -94,6 +95,7 @@ function addTodo(){
     todo.appendChild(todoCross); 
 
 }
+
 
 // delete / check task
 
@@ -155,18 +157,18 @@ function filterTodo(e){
 
 // delete task completed
 
-function clearCompleted(e) {
+function clearCompleted() {
 
-    const todos = toDoList.childNodes;
+    const todos = toDoList.querySelectorAll(".task-list__todo");
     
-    todos.forEach(function(todo){
+    todos.forEach(function(todo,){
 
     if (todo.children[1].classList.contains("completed")){
-        todo.remove();
+        
         frameList.pop(createTaskInput.value)
+        todo.remove();
         counter()
-    }; 
-
+        }  
 })
 };
 

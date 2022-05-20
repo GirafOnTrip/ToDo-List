@@ -2,10 +2,14 @@
 
 /* DARK THEME */
 
+.dark{
+
+    transition: all 0.4s;
+}
+
 body.dark {
 
     background: url(/images/bg-desktop-dark.jpg) no-repeat top;
-    background-size: 100%;
     background-color: $veryDarkBlue;
 }
 
@@ -42,15 +46,9 @@ body.dark {
 
 .name-task__custom-checkbox.dark{
 
-    border: double 0.063rem $veryDarkGrayishBlue;
-
-    &:hover{
-
-        border: double 0.125rem transparent;
-        background-image: linear-gradient($veryDarkDesaturatedBlue, $veryDarkDesaturatedBlue), 
-        $checkbox-color;
-    }
+    border: double 0.063rem $veryDarkGrayishBlue;  
 }
+
 
 .footer-list.dark{
 

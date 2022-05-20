@@ -16,8 +16,8 @@ body {
   font-weight: 300;
   background-color: hsl(0deg, 0%, 98%);
   background: url(/images/bg-desktop-light.jpg) no-repeat top;
-  background-size: 100%;
   position: relative;
+  transition: all 0.4s;
 }
 
 .container {
@@ -122,7 +122,7 @@ body {
 }
 .task-list__custom-checkbox:hover {
   border: double 0.125rem transparent;
-  background-image: linear-gradient(white, white), linear-gradient(152deg, rgb(0, 188, 212) 0%, rgb(238, 130, 238) 90%);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(152deg, rgb(0, 188, 212) 0%, rgb(238, 130, 238) 90%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -283,9 +283,12 @@ body {
   }
 }
 /* DARK THEME */
+.dark {
+  transition: all 0.4s;
+}
+
 body.dark {
   background: url(/images/bg-desktop-dark.jpg) no-repeat top;
-  background-size: 100%;
   background-color: hsl(235deg, 21%, 11%);
 }
 
@@ -317,10 +320,6 @@ body.dark {
 
 .name-task__custom-checkbox.dark {
   border: double 0.063rem hsl(237deg, 14%, 26%);
-}
-.name-task__custom-checkbox.dark:hover {
-  border: double 0.125rem transparent;
-  background-image: linear-gradient(hsl(235deg, 24%, 19%), hsl(235deg, 24%, 19%)), linear-gradient(152deg, rgb(0, 188, 212) 0%, rgb(238, 130, 238) 90%);
 }
 
 .footer-list.dark {
